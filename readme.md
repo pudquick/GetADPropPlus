@@ -16,7 +16,7 @@ An example usage for returning the description of a computer object, based on th
 
 `=GetADPropPlus("cn", "Computer", "<computer name here>", "description")`
 
-This will perform an AD search of the computer name provided and attempt to find a match for a "Computer" object with that login name value for their cn attribute. If found, it will return the description attribute for that object.
+This will perform an AD search of the computer name provided and attempt to find a match for a "Computer" object with that value for their cn attribute. If found, it will return the description attribute for that object.
 
 As this is an Excel function, when used you can replace the "<whatever name here>" strings with cell addresses instead and it will perform the lookup using the value of the cell in the Excel spreadsheet.
 
