@@ -1,4 +1,4 @@
-#GetADPropPlus - something here 
+#GetADPropPlus - A modification of an Excel macro for looking up AD properties
 
 GetADPropPlus is an extension of an Excel macro I found here: http://www.remkoweijnen.nl/blog/2007/11/01/query-active-directory-from-excel/
 
