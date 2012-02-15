@@ -4,15 +4,19 @@ GetADPropPlus is an extension of an Excel macro I found here: http://www.remkowe
 
 It can let you look up AD attributes from within Excel, which can help immensely with spreadsheets relating to computer or user objects. Usage of the function is as follows:
 
-=GetADPropPlus(attributeToMatch, objectType, matchString, attributeToReturn)
+`=GetADPropPlus(attributeToMatch, objectType, matchString, attributeToReturn)`
 
 An example usage for returning the display name of a user, based on their login account, would be:
 
-=GetADPropPlus("samaccountname", "User", "<login name here>", "displayname")
+`=GetADPropPlus("samaccountname", "User", "<login name here>", "displayname")`
+
+This will perform an AD search of the login name provided and attempt to find a match for a "User" object with that login name value for their samaccountname attribute. If found, it will return the displayname attribute for that object.
 
 An example usage for returning the description of a computer object, based on the computer's domain name, would be:
 
-=GetADPropPlus("cn", "Computer", "<computer name here>", "description")
+`=GetADPropPlus("cn", "Computer", "<computer name here>", "description")`
+
+This will perform an AD search of the computer name provided and attempt to find a match for a "Computer" object with that login name value for their cn attribute. If found, it will return the description attribute for that object.
 
 As this is an Excel function, when used you can replace the "<whatever name here>" strings with cell addresses instead and it will perform the lookup using the value of the cell in the Excel spreadsheet.
 
